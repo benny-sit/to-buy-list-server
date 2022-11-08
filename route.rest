@@ -1,0 +1,63 @@
+POST http://localhost:3000/lists/create
+Content-Type: application/json
+
+{
+    "name": "test2",
+    "password": "hashme"
+}
+
+### 
+
+POST http://localhost:3000/lists/open
+Content-Type: application/json
+
+{
+    "name": "test2",
+    "password": "$2b$10$0iYFDVw6Fj6qJmvthrttM.VIuGcgq..9VLViXw2zDzGAqvgTP4gc2"
+}
+
+###
+
+POST http://localhost:3000/lists/edit/
+Content-Type: application/json
+
+{
+    "name": "t",
+    "password": "1",
+    "itemName": "apple",
+    "quantity": 1
+}
+
+###
+
+DELETE  http://localhost:3000/lists/edit/clear
+Content-Type: application/json
+
+{
+    "name": "test2",
+    "password": "hashme"
+}
+
+### 
+
+DELETE http://localhost:3000/lists/edit
+Content-Type: application/json
+
+{
+    "name": "test2",
+    "password": "hashme",
+    "id": "6368b3ba03572e348f785292"
+}
+
+###
+
+PUT  http://localhost:3000/lists/edit
+Content-Type: application/json
+
+{
+    "name": "test2",
+    "password": "hashme",
+    "id": "6368c04568978b972ebf5877",
+    "itemName": "peachoto",
+    "quantity": 1
+}
